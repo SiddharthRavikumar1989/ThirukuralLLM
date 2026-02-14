@@ -33,7 +33,13 @@ icon_path = "assets/icon.png" if os.path.exists("assets/icon.png") else "📜"
 st.set_page_config(
     page_title="Thirukural Scholar",
     page_icon=icon_path,
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': None,
+        'Report a bug': None,
+        'About': None
+    }
 )
 
 # --- Custom CSS for Warm/Classic UI ---
@@ -47,6 +53,17 @@ st.markdown("""
         background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
         background-size: 20px 20px;
         color: #2c3e50;
+    }
+    
+    /* Hide Streamlit Header, Footer, and Deploy Button */
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+    }
+    footer {
+        visibility: hidden;
+    }
+    .stDeployButton {
+        display:none;
     }
     
     /* Main Container Width */
