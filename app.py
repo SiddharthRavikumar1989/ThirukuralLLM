@@ -226,6 +226,43 @@ st.markdown("""
         font-weight: 600;
     }
 
+
+    /* --- Mobile Responsive Rules --- */
+    @media (max-width: 768px) {
+        /* Adjust Header */
+        .main-header {
+            font-size: 1.8rem !important;
+            text-align: center !important;
+            margin-left: 0 !important;
+            margin-top: 10px !important;
+        }
+        
+        .subtitle {
+            font-size: 0.9rem !important;
+            text-align: center !important;
+            margin-left: 0 !important;
+            margin-bottom: 20px !important;
+        }
+        
+        /* Adjust Badge Position - make it inline on mobile */
+        .tamil-vellum-badge {
+            position: relative !important;
+            top: auto !important;
+            right: auto !important;
+            text-align: center !important;
+            margin-bottom: 10px !important;
+            font-size: 0.9rem !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        
+        /* Reduce Padding */
+        .block-container {
+            padding-top: 0.5rem !important;
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
