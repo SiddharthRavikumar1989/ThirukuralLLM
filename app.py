@@ -58,12 +58,12 @@ st.markdown("""
     /* Top Right Floating Badge */
     .tamil-vellum-badge {
         position: fixed;
-        top: 25px;
+        top: 15px;
         right: 40px;
         z-index: 1000;
         font-family: 'Noto Sans Tamil', sans-serif;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.0rem;
         background: linear-gradient(to right, #b45309, #d97706); /* Copper/Gold */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -73,22 +73,23 @@ st.markdown("""
     }
 
     /* Header Styling */
+    /* Header Styling */
     .main-header {
         font-family: 'Cinzel', serif;
         color: #78350f; /* Amber 900 */
         text-align: left;
-        font-size: 3.5rem;
+        font-size: 2.2rem;
         text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
         margin-bottom: 0px;
         margin-left: 60px; /* Moved Right */
-        padding-top: 10px;
+        padding-top: 5px;
     }
     
     .subtitle {
         font-family: 'Lora', serif;
         color: #57534e; /* Stone 600 */
-        font-size: 1.3rem;
-        margin-bottom: 30px;
+        font-size: 1.0rem;
+        margin-bottom: 15px;
         margin-left: 65px; /* Aligned with Header */
         font-style: italic;
     }
@@ -115,8 +116,8 @@ st.markdown("""
         border: 1px solid #e5e5e5 !important;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important;
         border-radius: 15px !important;
-        margin-bottom: 15px;
-        padding: 1.5rem !important;
+        margin-bottom: 10px;
+        padding: 1rem !important;
     }
 
     /* User Message Specifics */
@@ -150,22 +151,22 @@ st.markdown("""
 
     .sidebar-counselor-title {
         font-family: 'Cinzel', serif;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #78350f;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         text-align: center;
-        line-height: 1.5;
+        line-height: 1.4;
         font-weight: 600;
         border-bottom: 2px solid #fef3c7;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
     
     .sample-q {
         background-color: #fff;
-        padding: 12px 15px;
+        padding: 8px 10px;
         border-radius: 8px;
-        margin-bottom: 10px;
-        font-size: 0.95em;
+        margin-bottom: 8px;
+        font-size: 0.9em;
         color: #57534e;
         border: 1px solid #e7e5e4;
         cursor: pointer;
