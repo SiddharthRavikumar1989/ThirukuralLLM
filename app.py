@@ -236,6 +236,17 @@ st.markdown("""
         font-weight: 600;
     }
 
+    /* Spinner (Loading) Styling */
+    div[data-testid="stSpinner"] > div {
+        border-top-color: #d97706 !important;
+    }
+    div[data-testid="stSpinner"] p {
+        font-size: 1.1rem !important;
+        color: #78350f !important;
+        font-weight: 600;
+        font-family: 'Lora', serif;
+        visibility: visible !important; /* Force visibility */
+    }
 
     /* --- Mobile Responsive Rules --- */
     @media (max-width: 768px) {
