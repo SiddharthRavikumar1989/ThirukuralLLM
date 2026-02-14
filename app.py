@@ -9,6 +9,11 @@ from langchain_core.messages import HumanMessage, AIMessage
 # Load environment variables
 load_dotenv()
 
+# --- Streamlit Cloud Compatibility ---
+# Ensure OpenAI API Key is available for LangChain
+if "OPENAI_API_KEY" in st.secrets:
+    os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+
 # --- Page Config ---
 icon_path = "assets/icon.png" if os.path.exists("assets/icon.png") else "📜"
 
