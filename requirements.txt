@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+langchain-community
+langgraph
+chromadb
+streamlit
+pandas
+tiktoken
+python-dotenv
+Pillow
