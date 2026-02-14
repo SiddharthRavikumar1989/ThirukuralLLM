@@ -14,6 +14,19 @@ load_dotenv()
 if "OPENAI_API_KEY" in st.secrets:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
+if not os.getenv("OPENAI_API_KEY"):
+    st.error("🚨 **Configuration Error**: OpenAI API Key is missing!")
+    st.markdown("""
+    To fix this:
+    1. Go to your app's **Settings** > **Secrets**.
+    2. Add the following line:
+    ```toml
+    OPENAI_API_KEY = "sk-..."
+    ```
+    3. Click **Save** and then **Reboot** the app.
+    """)
+    st.stop()
+
 # --- Page Config ---
 icon_path = "assets/icon.png" if os.path.exists("assets/icon.png") else "📜"
 
