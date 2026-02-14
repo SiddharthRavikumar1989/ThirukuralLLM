@@ -52,7 +52,7 @@ The three sections (Paal) of Thirukural are:
 """
 
 def get_thirukural_agent():
-    llm = ChatOpenAI(model="gpt-4o", temperature=0)
+    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
     
     tools = [search_kurals, get_kural_explanation, get_random_kural_by_category]
     
