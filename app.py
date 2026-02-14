@@ -42,6 +42,16 @@ st.set_page_config(
     }
 )
 
+# --- Social Sharing (Open Graph) Tips ---
+st.markdown("""
+    <style>
+    /* Attempt to inject metadata for social scrapers */
+    meta[property="og:title"] { content: "Thirukural Scholar - Ancient Wisdom AI"; }
+    meta[property="og:description"] { content: "Explore the timeless wisdom of Thirukural with an AI companion. Ask about life, love, and virtue."; }
+    meta[property="og:image"] { content: "https://raw.githubusercontent.com/SiddharthRavikumar1989/ThirukuralLLM/main/assets/icon.png"; }
+    </style>
+    """, unsafe_allow_html=True)
+
 # --- Custom CSS for Warm/Classic UI ---
 st.markdown("""
 <style>
